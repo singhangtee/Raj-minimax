@@ -18,7 +18,7 @@ My approach to implementing the agent is to use a depth-limited minimax algorith
 
 There are multiple challenges to implementing the minimax algorithm. The first one being the game revealing both the player’s cards at the same time. My method of solving this is by only removing both player’s cards when it is the min’s move. The second challenge is that given the way I have implemented min’s move, the minimax algorithm will not work when the state at leaf node is max’s move. This will only happen if the depth is an odd number. I solved this problem by only updating the depth of states when it is min’s move. Now depth represents one complete move (both players removing their cards and deciding on what happens to the bid) instead of what it typically means when it comes to a tree. The way I calculated the heuristic score if only the depth has been met but not reaching the terminal state yet is that score += count + (bank_difference* num_of_items_left). Count is the number of agent’s card that are greater than the opponent cards. Bank_difference is the difference between the agent’s bank and the opponent’s bank. Num_of_items_left is the number of items left to be bid on in future rounds. This heuristic score works surprisingly well despite being so simple. 
 
-# Performance of my reinforcement learning agent 
+# Performance of my minimax agent 
 The settings are cardValues = (1, 2, 3, 4, 5, 6) and itemValues = (-2, -1, 1, 2, 3, 4). I recorded the number of games won, lost, drawn, time taken for 1000 games, opponent’s average score and agent’s average score. My minimax agent played against 3 different agents with different strategies.
 
 # Engine files
