@@ -20,6 +20,10 @@ There are multiple challenges to implementing the minimax algorithm. The first o
 
 # Performance of my minimax agent 
 The settings are cardValues = (1, 2, 3, 4, 5, 6) and itemValues = (-2, -1, 1, 2, 3, 4). I recorded the number of games won, lost, drawn, time taken for 1000 games, opponent’s average score and agent’s average score. My minimax agent played against 3 different agents with different strategies.
+![image](https://github.com/user-attachments/assets/645b7f30-cb24-4004-943a-4596662e8a13)
+
+
+My minimax agent won around 79% of its games against Random_agent, 68% of its games against Value_agent and 60% of its games against Valueplus_agent. My minimax agent’s average score is typically 1.5% better than all 3 opponents’s average score. Therefore, I think it is safe to say that my minimax agent does well against all 3 agents even at depth = 2. 
 
 # Engine files
 Download cosc343Raj.zip.  Extract it into your project folder.  You get several files:
