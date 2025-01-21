@@ -26,7 +26,7 @@ The settings are cardValues = (1, 2, 3, 4, 5, 6) and itemValues = (-2, -1, 1, 2,
 My minimax agent won around 79% of its games against Random_agent, 68% of its games against Value_agent and 60% of its games against Valueplus_agent. My minimax agent’s average score is typically 1.5% better than all 3 opponents’s average score. Therefore, I think it is safe to say that my minimax agent does well against all 3 agents even at depth = 2. 
 
 # Engine files
-Download cosc343Raj.zip.  Extract it into your project folder.  You get several files:
+Download the files and extract it. You get several files:
 * human_agent.py - agent that provides text based interface for human player
 * my_agent.py - Minimax agent
 * raj.py -the main game file - you run this script to run the game
